@@ -17,6 +17,11 @@ This can ultimately improve your experience in a few ways. Here are some:
 - `double_jump.max_height`: Maximum height gained on each jump. Default is `6.5`. This is the value used on a builtin jump.
 - `double_jump.privilege_required`: Whether a privilege is required for the double jump. This is given to administrators automatically. Default is `false`.
 
+## Known bugs
+
+- Sometimes, you randomly get a jump boost that sets you very high.
+- The jumps after the builtin jump might not sometimes work. This can also happen if you're standing on 3/4 of a node, where the node the player is standing on is not detected, and detecting `air` instead.
+
 ## Installation
 
 - Unzip the archive, rename the folder to `double_jump` and
