@@ -5,11 +5,17 @@
 Adds the ability to **double+ jump** in Minetest!\
 This can ultimately improve your experience in a few ways. Here are some:
 
-- Exploring: This will make it easier to reach areas with double jump.
-- Parkour: Level up your parkour skills and play on extreme parkour maps!
+- Exploring: This will make it easier to reach areas with a double jump.
+- Parkour: Level your parkour skills and play on extreme parkour maps!
 - PvP: Dodge your enemies' attacks and have intense battles.
 
 ![Double Jump](https://github.com/Panquesito7/double_jump/assets/51391473/79394981-18ad-4260-af3b-d5fd71a9a7fe)
+
+## Settings
+
+- `double_jump.max_jump`: The maximum number of **extra** jumps. This does NOT count the builtin jump. Default is `1`.
+- `double_jump.max_height`: Maximum height gained on each jump. Default is `6.5`. This is the value used on a builtin jump.
+- `double_jump.privilege_required`: Whether a privilege is required for the double jump. This is given to administrators automatically. Default is `false`.
 
 ## Installation
 
