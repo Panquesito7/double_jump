@@ -11,6 +11,8 @@ This can ultimately improve your experience in a few ways. Here are some:
 
 ![Double Jump](https://github.com/Panquesito7/double_jump/assets/51391473/bc6442d5-4a4f-4a6e-b44e-db81f1fda74f)
 
+You can see a video of it in action: <https://youtu.be/VTFYnTzhvro>
+
 ## Settings
 
 - `double_jump.max_jump`: The maximum number of **extra** jumps. This does NOT count the builtin jump. Default is `1`.
