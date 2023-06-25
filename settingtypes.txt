@@ -1,5 +1,6 @@
 # Extra jumps. This does NOT count the builtin jump.
 double_jump.max_jump (The maximum number of player jumps) int 1
+double_jump.infinite_jumps (Whether to have infinite jumps or not) bool false
 
 double_jump.max_height (The maximum height of a player jump after the first jump) float 6.5
 double_jump.privilege_required (Whether a privilege is required to double+ jump or not) bool false

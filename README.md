@@ -16,8 +16,9 @@ You can see a video of it in action: <https://youtu.be/VTFYnTzhvro>
 ## Settings
 
 - `double_jump.max_jump`: The maximum number of **extra** jumps. This does NOT count the builtin jump. Default is `1`.
+- `double_jump.infinite_jumps`: Whether to have infinite jumps or not. Disabled (`false`) by default.
 - `double_jump.max_height`: Maximum height gained on each jump. Default is `6.5`. This is the value used on a builtin jump.
-- `double_jump.privilege_required`: Whether a privilege is required for the double jump. This is given to administrators automatically. Default is `false`.
+- `double_jump.privilege_required`: Whether a privilege is required for the double jump. This is given to administrators automatically. Disabled (`false`) by default.
 
 ## Known bugs
 
