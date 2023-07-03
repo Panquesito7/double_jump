@@ -1,6 +1,6 @@
 # Double Jump!
 
-[![Build status](https://github.com/Panquesito7/double_jump/workflows/build/badge.svg)](https://github.com/Panquesito7/double_jump/actions)
+[![Build status](https://github.com/Panquesito7/minetest-double_jump/workflows/build/badge.svg)](https://github.com/Panquesito7/minetest-double_jump/actions)
 
 Adds the ability to **double+ jump** in Minetest!\
 This can ultimately improve your experience in a few ways. Here are some:
@@ -9,7 +9,7 @@ This can ultimately improve your experience in a few ways. Here are some:
 - Parkour: Level your parkour skills and play on extreme parkour maps!
 - PvP: Dodge your enemies' attacks and have intense battles.
 
-![Double Jump](https://github.com/Panquesito7/double_jump/assets/51391473/bc6442d5-4a4f-4a6e-b44e-db81f1fda74f)
+![Double Jump](https://github.com/Panquesito7/minetest-double_jump/assets/51391473/bc6442d5-4a4f-4a6e-b44e-db81f1fda74f)
 
 You can see a video of it in action: <https://youtu.be/VTFYnTzhvro>
 
