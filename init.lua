@@ -27,7 +27,7 @@ double_jump = {
 -- Settings --
 ---------------
 
-local max_jump_number = tonumber(minetest.settings:get("double_jump.max_jump_number")) or 1
+local max_jump_number = tonumber(minetest.settings:get("double_jump.max_jump")) or 1
 local max_jump_height = tonumber(minetest.settings:get("double_jump.max_height")) or 6.5
 local privilege_required = minetest.settings:get_bool("double_jump.privilege_required") or false
 local infinite_jump = minetest.settings:get_bool("double_jump.infinite_jumps") or false
