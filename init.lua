@@ -131,7 +131,8 @@ function double_jump.jump(player)
 end
 
 minetest.register_globalstep(function(_)
-    for i = 1, minetest.get_connected_players() do
+    local players = minetest.get_connected_players()
+    for i = 1, #players do
         double_jump.jump(players[i])
     end
 end)
