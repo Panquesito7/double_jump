@@ -30,7 +30,7 @@ double_jump = {
 local max_jump_number = tonumber(minetest.settings:get("double_jump.max_jump")) or 1
 local max_jump_height = tonumber(minetest.settings:get("double_jump.max_height")) or 6.5
 local privilege_required = minetest.settings:get_bool("double_jump.privilege_required") or false
-local infinite_jump = minetest.settings:get_bool("double_jump.infinite_jumps") or false
+local infinite_jumps = minetest.settings:get_bool("double_jump.infinite_jumps") or false
 
 ----------------
 -- Privileges --
@@ -104,7 +104,7 @@ function double_jump.jump(player)
 
             -- The first jump shouldn't be counted, thus, the need of `has_jumped`.
             if double_jump.has_jumped[player] then
-                if infinite_jump ~= true and double_jump.jump_number[player] >= max_jump_number then
+                if infinite_jumps ~= true and double_jump.jump_number[player] >= max_jump_number then
                     return
                 end
 
