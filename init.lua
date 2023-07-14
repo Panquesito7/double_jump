@@ -55,15 +55,16 @@ end
 --- @param player userdata The player object.
 --- @return nil
 function double_jump.reset(player)
-    double_jump.is_jumping[player] = false
     -- Reset values once the player touches any node.
     local pos = player:get_pos()
-    local node = minetest.get_node(vector.new(pos.x, pos.y - 0.5, pos.z))
+    local node = minetest.get_node(vector.new(pos.x, pos.y - 0.1, pos.z))
 
-    if node.name ~= "air" then
+    if node and node.name ~= "air" then
         double_jump.jump_number[player] = 0
         double_jump.has_jumped[player] = false
     end
+
+    double_jump.is_jumping[player] = false
 end
 
 --- @brief Initializes the necessary variables for the double+ jump.
