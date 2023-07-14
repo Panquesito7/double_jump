@@ -120,6 +120,10 @@ function double_jump.jump(player)
 
                 -- 6.5 is the default height for a normal jump.
                 player:add_velocity(vector.new(0, max_jump_height, 0))
+
+                -- Play the `player_jump` sound.
+                -- This is originally played on each jump.
+                minetest.sound_play({ name = "player_jump" }, { pos = player:get_pos(), to_player = player:get_player_name() })
             else
                 double_jump.has_jumped[player] = true
             end
