@@ -62,8 +62,8 @@ local function find_nodes_in_area_under_air_all_nodes(minp, maxp)
     minp.x = math.floor(minp.x + 0.5)
     minp.z = math.floor(minp.z + 0.5)
 
-    maxp.x = math.ceil(maxp.x + 0.5)
-    maxp.z = math.ceil(maxp.z + 0.5)
+    maxp.x = math.ceil(maxp.x - 0.5)
+    maxp.z = math.ceil(maxp.z - 0.5)
 
     for x = minp.x, maxp.x do
         for z = minp.z, maxp.z do
@@ -101,7 +101,7 @@ function double_jump.reset(player)
 
     local node = minetest.get_node(node_pos or { })
 
-    if node and node.name ~= "air" then
+    if node and node.name ~= "air" and node.name ~= "ignore" then
         double_jump.jump_number[player] = 0
         double_jump.has_jumped[player] = false
     end
