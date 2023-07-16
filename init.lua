@@ -94,11 +94,9 @@ function double_jump.reset(player)
 
     local node_pos
 
-    for _, node in pairs(nodes) do
-        if node.y > pos.y then
-            node_pos = node
-            break
-        end
+    for _, node in pairs(nodes) do -- luacheck: ignore
+        node_pos = node
+        break
     end
 
     local node = minetest.get_node(node_pos or { })
