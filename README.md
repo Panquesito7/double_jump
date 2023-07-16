@@ -24,7 +24,6 @@ You can see a video of it in action: <https://youtu.be/VTFYnTzhvro>
 ## Known bugs
 
 - Sometimes, you randomly get a jump boost that sets you very high.
-- The jumps after the builtin jump might not sometimes work. This can also happen if you're standing on 3/4 of a node, where the node the player is standing on is not detected, and detecting `air` instead.
 
 ## Installation
 

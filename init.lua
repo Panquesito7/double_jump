@@ -49,6 +49,37 @@ end
 -- Functions --
 ---------------
 
+--- @brief Exactly the same as `find_nodes_in_area_under_air`,
+--- except that the nodes do not need to be specified.
+--- @param minp table The minimum position.
+--- @param maxp table The maximum position.
+--- @return table positions The positions of the nodes (if found).
+local function find_nodes_in_area_under_air_all_nodes(minp, maxp)
+    local positions = { }
+    local i = 1
+
+    -- Adjust the positions.
+    minp.x = math.floor(minp.x + 0.5)
+    minp.z = math.floor(minp.z + 0.5)
+
+    maxp.x = math.ceil(maxp.x + 0.5)
+    maxp.z = math.ceil(maxp.z + 0.5)
+
+    for x = minp.x, maxp.x do
+        for z = minp.z, maxp.z do
+            local y = minp.y
+            local pos = vector.new(x, y, z)
+
+            if minetest.get_node(pos).name ~= "air" and minetest.get_node(vector.new(pos.x, pos.y + 1, pos.z)).name == "air" then
+                positions[i] = pos
+                i = i + 1
+            end
+        end
+    end
+
+    return positions
+end
+
 --- @brief Resets the jumping values of the player
 --- once the player touches any node, except `air`.
 --- @todo Fix checks not being detected well when a player is on the very corner of the node.
@@ -57,7 +88,20 @@ end
 function double_jump.reset(player)
     -- Reset values once the player touches any node.
     local pos = player:get_pos()
-    local node = minetest.get_node(vector.new(pos.x, pos.y - 0.1, pos.z))
+    local minp = vector.new(pos.x - 0.3, pos.y - 0.1, pos.z - 0.3)
+    local maxp = vector.new(pos.x + 0.3, pos.y, pos.z + 0.3)
+    local nodes = find_nodes_in_area_under_air_all_nodes(minp, maxp)
+
+    local node_pos
+
+    for _, node in pairs(nodes) do
+        if node.y > pos.y then
+            node_pos = node
+            break
+        end
+    end
+
+    local node = minetest.get_node(node_pos or { })
 
     if node and node.name ~= "air" then
         double_jump.jump_number[player] = 0
