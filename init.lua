@@ -139,6 +139,12 @@ function double_jump.jump(player)
     double_jump.initialize(player)
 
     if control.jump then
+        -- Is player flying? If so, don't allow the player to multiple jump.
+        local node = minetest.get_node(vector.new(player:get_pos().x, player:get_pos().y - 0.5, player:get_pos().z))
+        if player:get_velocity().y >= 0 and node.name == "air" then
+            return
+        end
+
         if not double_jump.is_jumping[player] then -- Needed so that the player doesn't jump multiple times while holding jump.
             -- If the player drops midair, let the player use the double jump.
             if player:get_velocity().y < 0 then
@@ -160,8 +166,12 @@ function double_jump.jump(player)
                     player:add_velocity(vector.new(0, math.abs(old_vel.y) + 0.2, 0))
                 end
 
-                -- 6.5 is the default height for a normal jump.
-                player:add_velocity(vector.new(0, max_jump_height, 0))
+                -- A jump boost happens if the player jumped normally, falls on a block and
+                -- instantly does the double jump, which results in a very high jump.
+                if player:get_velocity().y <= math.floor(2) and player:get_velocity().y ~= math.floor(0) then
+                    -- 6.5 is the default height for a normal jump.
+                    player:add_velocity(vector.new(0, max_jump_height, 0))
+                end
 
                 -- Play the `player_jump` sound.
                 -- This is originally played on each jump.

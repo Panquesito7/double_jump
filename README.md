@@ -21,10 +21,6 @@ You can see a video of it in action: <https://youtu.be/VTFYnTzhvro>
 - `double_jump.max_height`: Maximum height gained on each jump. Default is `6.5`. This is the value used on a builtin jump.
 - `double_jump.privilege_required`: Whether a privilege is required for the double jump. This is given to administrators automatically. Disabled (`false`) by default.
 
-## Known bugs
-
-- Sometimes, you randomly get a jump boost that sets you very high.
-
 ## Installation
 
 - Unzip the archive, rename the folder to `double_jump` and
