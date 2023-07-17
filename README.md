@@ -16,6 +16,8 @@ You can see a video of it in action: <https://youtu.be/VTFYnTzhvro>
 
 ## Settings
 
+These settings can be customized by modifying [`minetest.conf`](https://wiki.minetest.net/Minetest.conf) or directly in the Minetest settings.
+
 - `double_jump.max_jump`: The maximum number of **extra** jumps. This does NOT count the builtin jump. Default is `1`.
 - `double_jump.infinite_jumps`: Whether to have infinite jumps or not. Disabled (`false`) by default.
 - `double_jump.max_height`: Maximum height gained on each jump. Default is `6.5`. This is the value used on a builtin jump.
