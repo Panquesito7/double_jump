@@ -82,7 +82,6 @@ end
 
 --- @brief Resets the jumping values of the player
 --- once the player touches any node, except `air`.
---- @todo Fix checks not being detected well when a player is on the very corner of the node.
 --- @param player userdata The player object.
 --- @return nil
 function double_jump.reset(player)
