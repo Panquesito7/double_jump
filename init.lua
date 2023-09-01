@@ -17,6 +17,8 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 --]]
 
+local S = minetest.get_translator(minetest.get_current_modname())
+
 double_jump = {
     jump_number = { },
     is_jumping = { },
@@ -37,7 +39,7 @@ local infinite_jumps = minetest.settings:get_bool("double_jump.infinite_jumps") 
 ----------------
 if privilege_required then
     minetest.register_privilege({"double_jump",
-        description = "Allows the player to jump twice or more times!",
+        description = S("Allows the player to jump twice or more times!"),
         give_to_singleplayer = false,
         give_to_admin = true
     })
