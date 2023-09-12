@@ -1,6 +1,6 @@
 # Double Jump!
 
-[![Build status](https://github.com/Panquesito7/minetest-double_jump/workflows/build/badge.svg)](https://github.com/Panquesito7/minetest-double_jump/actions)
+[![LuaCheck status](https://github.com/Panquesito7/minetest-double_jump/workflows/luacheck/badge.svg)](https://github.com/Panquesito7/minetest-double_jump/actions)
 [![ContentDB](https://content.minetest.net/packages/Panquesito7/double_jump/shields/downloads/)](https://content.minetest.net/packages/Panquesito7/double_jump/)
 
 Adds the ability to **double+ jump** in Minetest!\
