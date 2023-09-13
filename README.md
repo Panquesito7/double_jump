@@ -12,7 +12,9 @@ This can ultimately improve your experience in a few ways. Here are some:
 
 ![Double Jump](https://github.com/Panquesito7/minetest-double_jump/assets/51391473/bc6442d5-4a4f-4a6e-b44e-db81f1fda74f)
 
-You can see a video of it in action: <https://youtu.be/VTFYnTzhvro>
+Here's a video showcasing the mod in action.
+
+[![Double Jump showcase](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FVTFYnTzhvro)](https://youtu.be/VTFYnTzhvro)
 
 ## Settings
 
