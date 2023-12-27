@@ -10,7 +10,7 @@ This can ultimately improve your experience in a few ways. Here are some:
 - Parkour: Level your parkour skills and play on extreme parkour maps!
 - PvP: Dodge your enemies' attacks and have intense battles.
 
-![Double Jump](https://github.com/Panquesito7/minetest-double_jump/assets/51391473/bc6442d5-4a4f-4a6e-b44e-db81f1fda74f)
+![Double Jump GIF](https://raw.githubusercontent.com/Panquesito7/minetest-double_jump/main/double_jump.gif)
 
 Here's a video showcasing the mod in action.
 
