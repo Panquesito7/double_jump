@@ -4,7 +4,7 @@ Copyright (C) 2023 David Leal (halfpacho@gmail.com)\
 Copyright (C) Various other Minetest developers/contributors
 
 - `screenshot.png`.
-  - The character was taken from [Minetest Game](https://github.com/minetest/minetest_game/blob/master/mods/player_api/models/character.blend) ([CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/)). The respective authors can be found [here](https://github.com/minetest/minetest_game/blob/master/mods/player_api/README.txt#L16-L18). A slight white background and effect was used on the character.
+  - The character was taken from [Minetest Game](https://github.com/minetest/minetest_game/blob/master/mods/player_api/models/character.blend) ([CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/)). The respective authors can be found [here](https://github.com/minetest/minetest_game/blob/master/mods/player_api/README.txt#L16-L18). A slight white background and effect were used on the character.
   - All the other elements were created by me ([Panquesito7](https://github.com/Panquesito7)), and are licensed under [CC BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 - `double_jump.gif` was created by me ([Panquesito7](https://github.com/Panquesito7)) and is licensed under [CC BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
