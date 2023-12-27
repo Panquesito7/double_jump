@@ -1,4 +1,16 @@
-# GNU LESSER GENERAL PUBLIC LICENSE
+# License for assets
+
+Copyright (C) 2023 David Leal (halfpacho@gmail.com)\
+Copyright (C) Various other Minetest developers/contributors
+
+- `screenshot.png`.
+  - The character was taken from [Minetest Game](https://github.com/minetest/minetest_game/blob/master/mods/player_api/models/character.blend) ([CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/)). The respective authors can be found [here](https://github.com/minetest/minetest_game/blob/master/mods/player_api/README.txt#L16-L18). A slight white background and effect was used on the character.
+  - All the other elements were created by me ([Panquesito7](https://github.com/Panquesito7)), and are licensed under [CC BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+- `double_jump.gif` was created by me ([Panquesito7](https://github.com/Panquesito7)) and is licensed under [CC BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## License for code
+
+### GNU LESSER GENERAL PUBLIC LICENSE
 
 Version 2.1, February 1999
 
@@ -12,7 +24,7 @@ Version 2.1, February 1999
      as the successor of the GNU Library Public License, version 2, hence
      the version number 2.1.]
 
-## Preamble
+#### Preamble
 
 The licenses for most software are designed to take away your freedom
 to share and change it. By contrast, the GNU General Public Licenses
@@ -115,7 +127,7 @@ modification follow. Pay close attention to the difference between a
 former contains code derived from the library, whereas the latter must
 be combined with the library in order to run.
 
-## TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+#### TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
 **0.** This License Agreement applies to any software library or other
 program which contains a notice placed by the copyright holder or
@@ -453,9 +465,9 @@ FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
 SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
 DAMAGES.
 
-## END OF TERMS AND CONDITIONS
+#### END OF TERMS AND CONDITIONS
 
-## How to Apply These Terms to Your New Libraries
+#### How to Apply These Terms to Your New Libraries
 
 If you develop a new library, and you want it to be of the greatest
 possible use to the public, we recommend making it free software that
