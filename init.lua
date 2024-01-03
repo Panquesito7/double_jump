@@ -1,6 +1,6 @@
 --[[
     A Minetest mod that allows the player to jump twice or more times.
-    Copyright (C) 2023 David Leal (halfpacho@gmail.com)
+    Copyright (C) 2023-2024 David Leal (halfpacho@gmail.com)
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -36,7 +36,7 @@ local infinite_jumps = minetest.settings:get_bool("double_jump.infinite_jumps") 
 
 -- Make sure the jump number is not something below zero.
 if max_jump_number <= 0 then
-    max_jump_number = 1
+    minetest.settings:set("double_jump.max_jump", 1)
 end
 
 ----------------
