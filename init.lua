@@ -115,17 +115,21 @@ function double_jump.reset(player, always_reset)
     local maxp = vector.new(pos.x + 0.3, pos.y, pos.z + 0.3)
     local nodes = find_all_nodes_in_area_under_air(minp, maxp)
 
+    if always_reset then
+        double_jump.jump_number[player] = 0
+        double_jump.has_jumped[player] = false
+        return
+    end
+
     for i = 1, #nodes do
         local node = minetest.get_node(nodes[i])
         local node_def = node and minetest.registered_nodes[node.name]
 
-        if (node_def and node_def.drawtype ~= "airlike") or always_reset then
+        if node_def and node_def.drawtype ~= "airlike" then
             double_jump.jump_number[player] = 0
             double_jump.has_jumped[player] = false
         end
     end
-
-    double_jump.is_jumping[player] = false
 end
 
 --- @brief Called every time the player uses the double jump.
@@ -184,6 +188,7 @@ function double_jump.jump(player, jump_value)
     else
         -- Reset variables in case the player has stopped jumping.
         double_jump.reset(player)
+        double_jump.is_jumping[player] = false -- This should only be resetted here.
     end
 end
 
@@ -216,8 +221,10 @@ function double_jump.globalstep()
 
         -- Is the player underwater? If so, we shouldn't trigger the double+ jump.
         for j = 1, #nodes do
-            local water = minetest.get_node_level(nodes[j])
-            if water > 0 then
+            local node = minetest.get_node(nodes[j])
+            local node_def = node and minetest.registered_nodes[node.name]
+
+            if node_def and (node_def.drawtype == "liquid" or node_def.drawtype == "flowingliquid") then
                 double_jump.reset(player, true)
                 return
             end
