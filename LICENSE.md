@@ -1,13 +1,10 @@
-# License of media
-
-Copyright (C) 2023 David Leal (halfpacho@gmail.com)\
-Copyright (C) Various other Minetest developers/contributors
+# Licenses of media
 
 - `screenshot.png`.
-  - The character model and texture were taken from [`character.blend`](https://github.com/minetest/minetest_game/blob/master/mods/player_api/models/character.blend) and [`character.png`](https://github.com/minetest/minetest_game/blob/master/mods/player_api/models/character.png) ([CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/)). The respective authors can be found [here](https://github.com/minetest/minetest_game/blob/master/mods/player_api/README.txt#L16-L23). A slight white background and effect were used on the character.
+  - The character model was taken from [`character.blend`](https://github.com/minetest/minetest_game/blob/master/mods/player_api/models/character.blend) and the texture from [`character.png`](https://github.com/minetest/minetest_game/blob/master/mods/player_api/models/character.png) ([CC BY-SA 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/)). The authors can be found [here](https://github.com/minetest/minetest_game/blob/master/mods/player_api/README.txt#L16-L23). A slight white background and effect were added to the asset.
   - The text and the blue line were created by me ([Panquesito7](https://github.com/Panquesito7)), and are licensed under [CC BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
-  - The screenshot of the game itself was taken by me ([Panquesito7](https://github.com/Panquesito7)) on [Minetest Game](https://github.com/minetest/minetest_game). All the assets/media shown in the image fall under its respective license and belong to its respective authors.
-- `double_jump.gif` was recorded and modified by me ([Panquesito7](https://github.com/Panquesito7)) on [Minetest Game](https://github.com/minetest/minetest_game). All the assets/media shown in the GIF fall under its respective license and belong to its respective authors.
+  - All the other assets/artwork were taken from [Minetest Game](https://github.com/minetest/minetest_game) via taking a screenshot in-game with the [Minetest](https://github.com/minetest/minetest) software, and belong to their respective copyright holders falling under their respective licenses.
+- All assets/artwork in `double_jump.gif` were taken from [Minetest Game](https://github.com/minetest/minetest_game) via taking a screenshot in-game with the [Minetest](https://github.com/minetest/minetest) software, and belong to their respective copyright holders falling under their respective licenses.
 
 ## License of code
 
@@ -466,7 +463,7 @@ FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
 SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
 DAMAGES.
 
-#### END OF TERMS AND CONDITIONS
+END OF TERMS AND CONDITIONS
 
 #### How to Apply These Terms to Your New Libraries
 
