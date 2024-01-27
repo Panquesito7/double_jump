@@ -1,4 +1,4 @@
-# Double Jump!
+# Double Jump
 
 [![LuaCheck status](https://github.com/Panquesito7/minetest-double_jump/workflows/luacheck/badge.svg)](https://github.com/Panquesito7/minetest-double_jump/actions)
 [![ContentDB](https://content.minetest.net/packages/Panquesito7/double_jump/shields/downloads/)](https://content.minetest.net/packages/Panquesito7/double_jump/)
@@ -22,7 +22,7 @@ These settings can be customized by modifying [`minetest.conf`](https://wiki.min
 
 - `double_jump.max_jump`: The maximum number of **extra** jumps. This does NOT count the builtin jump. Default is `1`.
 - `double_jump.infinite_jumps`: Whether to have infinite jumps or not. Disabled (`false`) by default.
-- `double_jump.max_height`: Maximum height gained on each jump. Default is `6.5`. This is the value used on a builtin jump.
+- `double_jump.max_height`: Maximum height gained on each jump. Default is [`movement_speed_jump`](https://github.com/minetest/minetest/blob/2b99dabdac823fee3ea843a9ded8bbe7718c3b44/builtin/settingtypes.txt#L935) (or `6.5`).
 
 ## Installation
 
@@ -40,4 +40,4 @@ For further information or help, see:\
 
 ## License
 
-See [`LICENSE.md`](LICENSE.md) for full details.
+See [`LICENSE.txt`](LICENSE.txt) for full license information and [`AUTHORS.md`](AUTHORS.md) for all the contributors.
