@@ -10,6 +10,8 @@ This can ultimately improve your experience in a few ways. Here are some:
 - Parkour: Level your parkour skills and play on extreme parkour maps!
 - PvP: Dodge your enemies' attacks and have intense battles.
 
+In order to perform the extra jump, the player must have the `double_jump` privilege.
+
 ![Double Jump GIF](https://raw.githubusercontent.com/Panquesito7/minetest-double_jump/main/double_jump.gif)
 
 Here's a video showcasing the mod in action.
